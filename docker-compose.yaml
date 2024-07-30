@@ -1,0 +1,8 @@
+﻿services:
+  db:
+    image: mongo:4.0
+    container_name: play-catalog-db
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./data/db:/data/db
